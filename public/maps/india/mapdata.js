@@ -8,13 +8,13 @@ var simplemaps_countrymap_mapdata={
     pop_ups: "detect",
     
 		//State defaults
-		state_description: "State description",
+		state_description: "Click to Open",
     state_color: "#88A4BC",
     state_hover_color: "#3B729F",
     state_url: "",
     border_size: 1.5,
     all_states_inactive: "no",
-    all_states_zoomable: "yes",
+    all_states_zoomable: "no",
     
 		//Location defaults
 		location_description: "Location description",
@@ -478,3 +478,15 @@ var simplemaps_countrymap_mapdata={
     }
   }
 };
+
+Object.keys(simplemaps_countrymap_mapdata.state_specific).forEach(function(key) {
+    const state = simplemaps_countrymap_mapdata.state_specific[key];
+
+    // Convert state name into a Laravel-friendly slug
+    const slug = state.name
+        .toLowerCase()
+        .replace(/[^\w\s]/g, '')   // remove accents/apostrophes
+        .replace(/\s+/g, '-');     // spaces → hyphens
+
+    state.url = "/states/" + slug;
+});
