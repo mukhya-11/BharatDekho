@@ -118,4 +118,36 @@
 
 </section>
 
+<section id="india-map-section" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+            <p class="uppercase tracking-[5px] text-orange-500 font-bold">
+                Interactive India Map
+            </p>
+
+            <h2 class="text-5xl font-black text-gray-900 mt-3">
+                Explore India State by State
+            </h2>
+
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Hover over any state to discover India's rich cultural heritage and click to explore monuments, festivals, food, music and traditions.
+            </p>
+        </div>
+
+<div class="relative bg-orange-50 rounded-[40px] p-4 md:p-8 shadow-xl border border-orange-100 overflow-hidden">        
+    <div id="tooltip"
+         class="hidden absolute px-4 py-2 bg-gray-900 text-white rounded-full text-sm pointer-events-none z-50">
+    </div>
+
+    @include('components.india-map')
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
 @endsection
