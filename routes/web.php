@@ -36,3 +36,16 @@ Route::get('/states/{state}', function ($state) {
     ]);
 
 })->name('states.show');
+
+
+Route::get('/states/{state}/{section}', function ($state, $section) {
+
+    $state = Str::of($state)->replace('-', ' ')->title();
+    $section = Str::of($section)->replace('-', ' ')->title();
+
+    return view('states.section', [
+        'state' => $state,
+        'section' => $section,
+    ]);
+
+})->name('states.section');
