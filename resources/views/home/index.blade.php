@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'BharatVerse')
+@section('title', 'BharatDekho')
 
 @section('content')
 
@@ -21,7 +21,7 @@
         </p>
 
         <h1 class="text-5xl md:text-7xl font-black leading-tight">
-            BharatVerse
+            BharatDekho
         </h1>
 
         <p class="mt-6 text-lg md:text-2xl text-gray-200 leading-relaxed max-w-2xl">
@@ -136,14 +136,12 @@
             </p>
         </div>
 
-<div class="relative bg-orange-50 rounded-[40px] p-4 md:p-8 shadow-xl border border-orange-100 overflow-hidden">        
-    <div id="tooltip"
-         class="hidden absolute px-4 py-2 bg-gray-900 text-white rounded-full text-sm pointer-events-none z-50">
-    </div>
+        <div class="relative bg-orange-50 rounded-[40px] p-4 md:p-8 shadow-xl border border-orange-100 overflow-hidden">        
+            <div id="tooltip"
+                class="hidden absolute px-4 py-2 bg-gray-900 text-white rounded-full text-sm pointer-events-none z-50">
+            </div>
 
-    @include('components.india-map')
-</div>
-
+            @include('components.india-map')
         </div>
 
     </div>

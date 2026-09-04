@@ -15,7 +15,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
             <a href="/" class="text-3xl font-black tracking-wide text-orange-400">
-                BharatVerse
+                BharatDekho
             </a>
 
             <div class="hidden md:flex items-center gap-8 font-medium">
