@@ -24,7 +24,7 @@
 
             <a href="{{ route('states.section', ['state' => Str::slug($state), 'section' => 'history']) }}" class="block bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=900&auto=format&fit=crop" class="h-52 w-full object-cover">
+                    <img src="https://plus.unsplash.com/premium_photo-1697730399235-bcca956cc6d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5kaWElMjBoaXN0b3J5fGVufDB8fDB8fHww" class="h-52 w-full object-cover">
                     <div class="p-6">
                         <h3 class="font-bold text-xl">History</h3>
                         <p class="text-gray-600 mt-2">Explore dynasties from the Indus Valley to Modern India.</p>
@@ -46,7 +46,7 @@
 
             <a href="{{ route('states.section', ['state' => Str::slug($state), 'section' => 'festivals']) }}" class="block bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1604608672516-8ff3b521d0e1?q=80&w=900&auto=format&fit=crop" class="h-52 w-full object-cover">
+                    <img src="https://plus.unsplash.com/premium_photo-1729038870113-96b77abd8f34?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGluZGlhJTIwZmVzdGl2YWx8ZW58MHx8MHx8fDA%3D" class="h-52 w-full object-cover">
                     <div class="p-6">
                         <h3 class="font-bold text-xl">Festivals & Traditons</h3>
                         <p class="text-gray-600 mt-2">Celebrate India's vibrant traditions and seasonal festivals.</p>
@@ -57,7 +57,7 @@
 
             <a href="{{ route('states.section', ['state' => Str::slug($state), 'section' => 'culture']) }}" class="block bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1583396618422-5977b36d1f8d?q=80&w=900&auto=format&fit=crop" class="h-52 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kaWElMjBjdWx0dXJlfGVufDB8fDB8fHww" class="h-52 w-full object-cover">
                     <div class="p-6">
                         <h3 class="font-bold text-xl">Culture</h3>
                         <p class="text-gray-600 mt-2">Dance, music, clothing, languages and handicrafts.</p>
