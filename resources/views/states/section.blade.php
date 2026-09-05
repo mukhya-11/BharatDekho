@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('hideLoginButton')
+@endsection
 @section('content')
 
 @php

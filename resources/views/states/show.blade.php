@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('hideLoginButton')
+@endsection
 @section('content')
 
 <section id="explore" class="py-24 bg-amber-50">
