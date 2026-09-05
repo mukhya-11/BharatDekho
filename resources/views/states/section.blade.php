@@ -54,19 +54,19 @@
 
             <article class="bg-white rounded-[28px] shadow-lg border border-orange-100 overflow-hidden mb-10">
 
-                {{-- Festival Image --}}
+                {{-- Image --}}
                 @if($item->image_url)
                     <img
                         src="{{ asset('images/' . $item->image_url) }}"
                         alt="{{ $item->name }}"
-                        class="w-full h-[260px] md:h-[420px] object-cover"
+                        class="w-full h-auto max-h-120 object-cover object-center"
                     >
                 @endif
 
-                {{-- Festival Content --}}
+                {{-- Content --}}
                 <div class="p-8">
 
-                    <h3 class="text-3xl font-bold text-gray-900 mb-5">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-0.4">
                         {{ $item->name }}
                     </h3>
 
