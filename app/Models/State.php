@@ -13,11 +13,6 @@ class State extends Model
         return $this->hasMany(Festival::class);
     }
 
-    public function pictures()
-    {
-        return $this->hasMany(Picture::class);
-    }
-
     public function culture()
     {
         return $this->hasMany(Culture::class);

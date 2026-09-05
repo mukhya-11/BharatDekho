@@ -55,10 +55,10 @@
             <article class="bg-white rounded-[28px] shadow-lg border border-orange-100 overflow-hidden mb-10">
 
                 {{-- Festival Image --}}
-                @if($item->picture)
+                @if($item->image_url)
                     <img
-                        src="{{ asset($item->picture->image_path) }}"
-                        alt="{{ $item->picture->pic_name }}"
+                        src="{{ asset('images/' . $item->image_url) }}"
+                        alt="{{ $item->name }}"
                         class="w-full h-[260px] md:h-[420px] object-cover"
                     >
                 @endif

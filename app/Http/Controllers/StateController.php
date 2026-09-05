@@ -16,33 +16,25 @@ class StateController extends Controller
         $stateModel = State::where('slug', $state)->firstOrFail();
 
         switch ($section) {
-
             case 'festivals':
-                $content = $stateModel->festivals()
-                    ->with('picture')
-                    ->get();
+                $content = $stateModel->festivals()->get();
                 break;
 
             case 'history':
-                $content = $stateModel->history()
-                    ->with('picture')
-                    ->get();
+                $content = $stateModel->history()->get();
                 break;
 
             case 'heritage':
-                $content = $stateModel->heritage()
-                    ->with('picture')
-                    ->get();
+                $content = $stateModel->heritage()->get();
                 break;
 
             case 'culture':
-                $content = $stateModel->culture()
-                    ->with('picture')
-                    ->get();
+                $content = $stateModel->culture()->get();
                 break;
 
             default:
                 abort(404);
+
         }
 
         return view('states.section', [

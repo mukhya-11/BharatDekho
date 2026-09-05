@@ -11,19 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('culture', function (Blueprint $table) {
+        Schema::create('history', function (Blueprint $table) {
             $table->id();
 
             $table->foreignId('state_id')
-                  ->constrained('states')
+                  ->constrained()
                   ->cascadeOnDelete();
 
-            $table->foreignId('pic_id')
-                  ->nullable()
-                  ->constrained('pictures')
-                  ->nullOnDelete();
-
             $table->string('name');
+            $table->string('image_url')->nullable();
             $table->longText('description');
 
             $table->timestamps();
@@ -35,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('culture');
+        Schema::dropIfExists('history');
     }
 };

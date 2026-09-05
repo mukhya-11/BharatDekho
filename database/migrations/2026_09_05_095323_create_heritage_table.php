@@ -11,20 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('history', function (Blueprint $table) {
+        Schema::create('heritage', function (Blueprint $table) {
             $table->id();
 
             $table->foreignId('state_id')
-                  ->constrained('states')
+                  ->constrained()
                   ->cascadeOnDelete();
 
-            $table->foreignId('pic_id')
-                  ->nullable()
-                  ->constrained('pictures')
-                  ->nullOnDelete();
-
             $table->string('name');
-            $table->longText('description');
+            $table->string('image_url')->nullable();
+            $table->longText('description')->nullable();
 
             $table->timestamps();
         });
@@ -35,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('history');
+        Schema::dropIfExists('heritage');
     }
 };

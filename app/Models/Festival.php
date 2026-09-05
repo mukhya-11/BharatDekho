@@ -6,20 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Festival extends Model
 {
+    protected $table = 'festivals';
+
     protected $fillable = [
         'state_id',
-        'pic_id',
         'name',
-        'description'
+        'image_url',
+        'description',
     ];
 
     public function state()
     {
         return $this->belongsTo(State::class);
-    }
-
-    public function picture()
-    {
-        return $this->belongsTo(Picture::class, 'pic_id');
     }
 }

@@ -10,15 +10,10 @@ class Heritage extends Model
 
     protected $fillable = [
         'state_id',
-        'pic_id',
         'name',
+        'image_url',
         'description',
     ];
-
-    public function picture()
-    {
-        return $this->belongsTo(Picture::class, 'pic_id');
-    }
 
     public function state()
     {
