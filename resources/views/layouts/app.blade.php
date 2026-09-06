@@ -18,13 +18,23 @@
                 BharatDekho
             </a>
 
-            <!-- <div class="hidden md:flex items-center gap-8 font-medium">
-                <a href="#explore" class="hover:text-orange-300 transition">Explore</a>
-                <a href="#heritage" class="hover:text-orange-300 transition">Heritage</a>
-                <a href="#festivals" class="hover:text-orange-300 transition">Festivals</a>
-                <a href="#timeline" class="hover:text-orange-300 transition">Timeline</a>
-                <a href="/profile" class="hover:text-orange-300 transition">Profile</a>
-            </div> -->
+            <div class="hidden md:flex items-center gap-8 font-medium">
+                <a href="{{ route('explore.section','history') }}" class="hover:text-orange-300 transition">
+                    Histories
+                </a>
+
+                <a href="{{ route('explore.section','festivals') }}" class="hover:text-orange-300 transition">
+                    Festivals & Traditions
+                </a>
+
+                <a href="{{ route('explore.section','heritage') }}" class="hover:text-orange-300 transition">
+                    Heritage Sites
+                </a>
+
+                <a href="{{ route('explore.section','culture') }}" class="hover:text-orange-300 transition">
+                    Cultures
+                </a>
+            </div>
             @unless(View::hasSection('hideButton'))
                 <a href="{{ route('upload.create') }}"
                 class="bg-orange-500 px-5 py-2 rounded-full hover:bg-orange-600 transition">

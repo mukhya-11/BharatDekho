@@ -11,6 +11,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Str;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\ExploreController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -54,3 +55,9 @@ Route::get('/upload', [UploadController::class, 'create'])
 
 Route::post('/upload', [UploadController::class, 'store'])
     ->name('upload.store');
+
+
+
+
+Route::get('/explore/{section}', [ExploreController::class, 'index'])
+    ->name('explore.section');
