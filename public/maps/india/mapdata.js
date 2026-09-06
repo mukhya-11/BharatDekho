@@ -324,13 +324,6 @@ var simplemaps_countrymap_mapdata={
       url: "default"
     }
   },
-  locations: {
-    "0": {
-      name: "New Delhi",
-      lat: "28.6",
-      lng: "77.2"
-    }
-  },
   labels: {
     INAN: {
       name: "Andaman and Nicobar",

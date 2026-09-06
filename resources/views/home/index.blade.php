@@ -64,7 +64,7 @@
             </p>
         </div>
 
-        <div class="relative bg-orange-50 rounded-[40px] p-4 md:p-8 shadow-xl border border-orange-100 overflow-hidden">        
+        <div class="relative bg-orange-50 rounded-[40px] p-4 md:p-8 min-h-[1150px] shadow-xl border border-orange-100 overflow-hidden">        
             <div id="tooltip"
                 class="hidden absolute px-4 py-2 bg-gray-900 text-white rounded-full text-sm pointer-events-none z-50">
             </div>
