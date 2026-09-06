@@ -289,8 +289,8 @@ small{
                 <label>Select Category</label>
                 <select name="category">
                     <option value="">Choose Category</option>
-                    <option value="festival">Festival</option>
-                    <option value="heritage">Heritage</option>
+                    <option value="festival">Festivals & Traditions</option>
+                    <option value="heritage">Heritage Sites</option>
                     <option value="culture">Culture</option>
                     <option value="history">History</option>
                 </select>
