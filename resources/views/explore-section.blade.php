@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('hideNavbar', true)
 @section('title', ucfirst($section))
 
 @section('content')

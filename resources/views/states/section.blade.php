@@ -1,6 +1,5 @@
 @extends('layouts.app')
-@section('hideLoginButton')
-@endsection
+@section('hideNavbar', true)
 @section('content')
 
 @php
