@@ -28,35 +28,36 @@
     <div id="content-list"
          class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
 
-        @foreach($items as $item)
-            <div class="bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
+    @forelse($items as $item)
+        <div class="bg-white rounded-3xl overflow-hidden shadow hover:shadow-xl transition">
 
-<img src="{{ asset('images/' . $item->image_url) }}"
-     alt="{{ $item->name }}"
-     class="w-full h-56 object-cover">
+            <img src="{{ asset('images/' . $item->image_url) }}"
+                alt="{{ $item->name }}"
+                class="w-full h-56 object-cover">
 
-                <div class="p-6">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-2xl font-bold text-orange-700">
+                        {{ $item->name }}
+                    </h2>
 
-                    <div class="flex justify-between items-center mb-3">
-
-                        <h2 class="text-2xl font-bold text-orange-700">
-                            {{ $item->name }}
-                        </h2>
-
-                        <span class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
-                            {{ $item->state->name }}
-                        </span>
-
-                    </div>
-
-                    <p class="text-gray-600 leading-relaxed">
-                        {{ $item->description }}
-                    </p>
-
+                    <span class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
+                        {{ $item->state->name }}
+                    </span>
                 </div>
 
+                <p class="text-gray-600 leading-relaxed">
+                    {{ $item->description }}
+                </p>
             </div>
-        @endforeach
+
+        </div>
+
+    @empty
+        <div class="md:col-span-2 text-center py-16">
+            <p class="text-2xl font-semibold text-gray-500">No data available.</p>
+        </div>
+    @endforelse
 
     </div>
 
