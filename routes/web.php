@@ -61,3 +61,5 @@ Route::post('/upload', [UploadController::class, 'store'])
 
 Route::get('/explore/{section}', [ExploreController::class, 'index'])
     ->name('explore.section');
+
+Route::view('/timeline', 'timeline')->name('timeline');

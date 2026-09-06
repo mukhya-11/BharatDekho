@@ -34,10 +34,10 @@
                 Explore India
             </a>
 
-            <!-- <a href="#timeline"
-               class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-semibold transition duration-300">
+            <a href="{{ route('timeline') }}"
+            class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-semibold transition duration-300">
                 Journey Through Time
-            </a> -->
+            </a>
         </div>
 
     </div>
