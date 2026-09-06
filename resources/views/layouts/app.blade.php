@@ -25,11 +25,11 @@
                 <a href="#timeline" class="hover:text-orange-300 transition">Timeline</a>
                 <a href="/profile" class="hover:text-orange-300 transition">Profile</a>
             </div> -->
-
-            @unless(View::hasSection('hideLoginButton'))
-                <button class="bg-orange-500 px-5 py-2 rounded-full hover:bg-orange-600 transition">
-                    Login
-                </button>
+            @unless(View::hasSection('hideButton'))
+                <a href="{{ route('upload.create') }}"
+                class="bg-orange-500 px-5 py-2 rounded-full hover:bg-orange-600 transition">
+                    Upload
+                </a>
             @endunless
 
         </div>

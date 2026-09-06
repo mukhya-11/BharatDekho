@@ -10,6 +10,8 @@ use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Str;
+use App\Http\Controllers\UploadController;
+
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -44,3 +46,11 @@ Route::get('/state/{state}/{section}', [StateController::class, 'section'])
 // One route only for ALL sections (heirtage, history, festivals and culture)
 Route::get('/states/{state}/{section}', [StateController::class, 'section'])
     ->name('states.section');
+
+
+
+Route::get('/upload', [UploadController::class, 'create'])
+    ->name('upload.create');
+
+Route::post('/upload', [UploadController::class, 'store'])
+    ->name('upload.store');
